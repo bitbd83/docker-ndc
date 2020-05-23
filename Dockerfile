@@ -29,7 +29,7 @@ RUN mv ubuntu-18_daemon ndcd
 RUN chmod +x ndcd
 RUN mv ndcd /usr/local/bin/ 
 
-VOLUME ["/.ndc"]
+VOLUME ["/ndc"]
 EXPOSE 17799 17798
 
 COPY ["bin", "/usr/local/bin/"]
