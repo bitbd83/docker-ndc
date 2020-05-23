@@ -4,11 +4,11 @@ set -e
 ndcd_setup.sh
 
 echo "################################################"
-echo "# Configuration used: /.ndc/ndc.conf  #"
+echo "# Configuration used: /root/.ndc/ndc.conf  #"
 echo "################################################"
 echo ""
-cat /.ndc/ndc.conf
+cat /root/.ndc/ndc.conf
 echo ""
 echo "################################################"
 
-exec ndcd -datadir=/ndc -conf=/.ndc/ndc.conf -printtoconsole "$@"
+exec ndcd -datadir=/ndc -conf=/root/.ndc/ndc.conf -printtoconsole "$@"
